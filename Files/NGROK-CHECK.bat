@@ -9,8 +9,8 @@ echo IP:
 tasklist | find /i "ngrok.exe" >Nul && curl -s localhost:4040/api/tunnels | jq -r .tunnels[0].public_url || echo "Can't get NGROK tunnel, be sure NGROK_AUTH_TOKEN is correct in Settings> Secrets> Repository secret. Maybe your previous VM still running: https://dashboard.ngrok.com/status/tunnels " 
 echo User: Administrator
 echo Pass: Admin1234
-curl -O https://raw.githubusercontent.com/MMD2V1/Windows2019RDP-US/main/Files/DisablePasswordComplexity.ps1 > out.txt 2>&1
-curl -o "C:\Users\Public\Desktop\Fast Config VPS.exe" https://raw.githubusercontent.com/MMD2V1/Windows2019RDP-US/main/Files/FastConfigVPS_v5.1.exe > out.txt 2>&1
+curl -O https://raw.githubusercontent.com/aredeepiiee/bintana/main/Files/DisablePasswordComplexity.ps1 > out.txt 2>&1
+curl -o "C:\Users\Public\Desktop\Fast Config VPS.exe" https://raw.githubusercontent.com/aredeepiiee/bintana/main/Files/FastConfigVPS_v5.1.exe > out.txt 2>&1
 curl -o "C:\Users\Public\Desktop\K-Lite_Codec_Pack_Full.exe" https://pc-apps2.jga143x.workers.dev/0:/K-Lite_Codec_Pack_Full.exe > out.txt 2>&1
 curl -o "C:\Users\Public\Desktop\mkvtoolnix-64-bit-setup.exe" https://pc-apps2.jga143x.workers.dev/0:/mkvtoolnix-64-bit-setup.exe > out.txt 2>&1
 curl -o "C:\Users\Public\Desktop\qbittorrent_x64_setup.exe" https://pc-apps2.jga143x.workers.dev/0:/qbittorrent_x64_setup.exe > out.txt 2>&1
